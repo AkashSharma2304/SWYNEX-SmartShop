@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartShop - My Cart</title>
+
+    <!-- Same CSS file used on Home Page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <header>
+            <a href="index.html" class="logo-link">
+                <img
+                    src="SmartShop Blue Cart Logo Options.png"
+                    alt="SmartShop Logo"
+                >
+            </a>
+        </header>
+
+        <div class="navigation-link">
+            <a href="index.html">Home</a>
+            <a href="index.html#products">Products</a>
+            <a href="index.html#footer">About</a>
+        </div>
+
+        <a href="cart.html" id="cartLink">Cart (0)</a>
+    </nav>
+
+
+    <!-- Cart Page -->
+    <main class="cart-page">
+        <div class="cart-page-heading">
+            <h1>My Shopping Cart</h1>
+            <p>Review your items and complete your order.</p>
+        </div>
+        <div class="cart-layout">
+
+            <!-- Cart Products -->
+            <section class="cart-items-section">
+                <div class="cart-header">
+                    <h2>Cart Items</h2>
+                    <button
+                        type="button"
+                        id="clearCartBtn"
+                    >
+                        Clear Cart
+                    </button>
+                </div>
+
+                <!-- JavaScript will display cart products here -->
+                <div id="cartItems" class="cart-items"></div>
+            </section>
+
+            <!-- Order Summary -->
+            <aside class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Total Items</span>
+                    <span id="totalItems">0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹0.00</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span id="delivery">Free</span>
+                </div>
+                <hr>
+                <div class="summary-row total-row">
+                    <span>Total Amount</span>
+                    <span id="totalAmount">₹0.00</span>
+                </div>
+                <button
+                    type="button"
+                    id="checkoutBtn"
+                >
+                    Proceed to Checkout
+                </button>
+                <a href="index.html" class="continue-shopping">
+                    Continue Shopping
+                </a>
+            </aside>
+        </div>
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
